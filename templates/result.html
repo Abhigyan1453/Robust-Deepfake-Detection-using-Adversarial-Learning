@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Detection Result</title>
+  <style>
+    body {
+      background: #eef1f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .result-box {
+      background: white;
+      padding: 30px 50px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+    p {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+    .real {
+      color: green;
+    }
+    .fake {
+      color: red;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+      background: #007BFF;
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+    a:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="result-box">
+    <h2>Detection Result</h2>
+    <p class="{{ 'fake' if prediction == 'Fake' else 'real' }}">
+      {{ prediction }}
+    </p>
+    <a href="/">Try Another Video</a>
+  </div>
+</body>
+</html>
