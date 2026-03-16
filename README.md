@@ -31,7 +31,7 @@ The trained model file (`model.pth`) exceeds GitHub's file size limit. You can d
 ```bash```
 ### 2. Download the model.pth file from the Google Drive link provided above and place it in the project folder.
 ### 3. Install Dependencies
-      Ensure you have Python installed, then run:
+Ensure you have Python installed, then run:
 ```pip install -r requirements.txt```
 ### 4. Run the Application
 ```python app.py```
