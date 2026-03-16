@@ -1,0 +1,7 @@
+cd /d "D:\Minor Project"
+python -m venv venv
+venv\Scripts\activate
+(venv) D:\Minor Project>
+pip install flask opencv-python-headless numpy torch torchvision moviepy
+deactivate
+

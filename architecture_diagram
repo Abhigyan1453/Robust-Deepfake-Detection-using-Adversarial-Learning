@@ -1,0 +1,20 @@
+// Deepfake Detection System Architecture
+digraph {
+	rankdir=LR
+	A [label="Input Image"]
+	B [label="Face Extraction & Preprocessing
+- Face Detection
+- Alignment
+- Normalization"]
+	C [label="Feature Extraction Network
+- Generator
+- Discriminator"]
+	D [label="Classification & Decision Module
+- Real/Fake
+- Confidence Score"]
+	A -> B
+	B -> C
+	C -> D
+	B -> D [constraint=false]
+	D -> B [label="Feedback Loop" style=dashed]
+}
